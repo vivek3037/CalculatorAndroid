@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-        var Newnumber=true
+    var Newnumber=true
     var Oldnumber=""
     var opt="+"
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -81,10 +81,10 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun clearEvent(view: View) {
+    fun clearFunction(view: View) {
 
         EditText.setText("")
     }
-    }
 
+}
 

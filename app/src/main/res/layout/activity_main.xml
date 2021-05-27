@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="120pt"
+        android:layout_marginBottom="2pt"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="right|bottom"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textColor="@color/gray"
+        android:textSize="60dp"/>
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="CE"
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/orange1"
+        android:id="@+id/buclear"
+        android:onClick="clearEvent"/>
+
+
+
+    <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text=" back "
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/orange"
+        android:id="@+id/buback"
+        android:onClick="OperatorFunction"/>
+
+        <Button
+            android:id="@+id/bupercent"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:onClick="OperatorFunction"
+            android:text="%"
+            android:textSize="40dp" />
+
+        <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="/"
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/orange"
+        android:id="@+id/budivide"
+        android:onClick="OperatorFunction"/>
+
+</TableRow>
+
+</TableLayout>
+
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+    -<TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="7"
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/lightblue"
+        android:id="@+id/bu7"
+        android:onClick="NumberFunction"/>
+
+    <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="8"
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/lightblue"
+        android:id="@+id/bu8"
+        android:onClick="NumberFunction"/>
+
+    <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="9"
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/lightblue"
+        android:id="@+id/bu9"
+        android:onClick="NumberFunction"/>
+
+    <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="*"
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/orange"
+        android:id="@+id/bumulti"
+        android:onClick="OperatorFunction"/>
+
+</TableRow>
+
+</TableLayout>
+
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="4"
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/lightblue"
+        android:id="@+id/bu4"
+        android:onClick="NumberFunction"/>
+
+        <Button
+            android:id="@+id/bu5"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_weight="1"
+            android:background="@color/lightblue"
+            android:gravity="center"
+            android:onClick="NumberFunction"
+            android:text="5"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/bu6"
+            android:layout_width="40pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lightblue"
+            android:gravity="center"
+            android:onClick="NumberFunction"
+            android:text="6"
+            android:textSize="40dp" />
+
+        <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="-"
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/orange"
+        android:id="@+id/buminus"
+        android:onClick="OperatorFunction"/>
+
+</TableRow>
+
+</TableLayout>
+
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/lightblue"
+        android:id="@+id/bu1"
+        android:onClick="NumberFunction"/>
+
+    <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="2"
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/lightblue"
+        android:id="@+id/bu2"
+        android:onClick="NumberFunction"/>
+
+    <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="3"
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/lightblue"
+        android:id="@+id/bu3"
+        android:onClick="NumberFunction"/>
+
+    <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="+"
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/orange"
+        android:id="@+id/buadd"
+        android:onClick="OperatorFunction"/>
+
+</TableRow>
+
+</TableLayout>
+
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="+/-"
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/lightblue"
+        android:id="@+id/buplusminus"
+        android:onClick="NumberFunction"/>
+
+    <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/lightblue"
+        android:id="@+id/bu0"
+        android:onClick="NumberFunction"/>
+
+    <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="."
+        android:textSize="40sp"
+        android:layout_weight="1"
+        android:background="@color/lightblue"
+        android:id="@+id/bupoint"
+        android:onClick="NumberFunction"/>
+
+    <Button
+        android:layout_height="40pt"
+        android:layout_width="40pt"
+        android:gravity="center"
+        android:text="="
+        android:textSize="40dp"
+        android:layout_weight="1"
+        android:background="@color/orange"
+        android:id="@+id/buqual"
+        android:onClick="EqualFunction"/>
+
+</TableRow>
+
+</TableLayout>
+
+</LinearLayout>
